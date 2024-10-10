@@ -8,7 +8,7 @@
 # ['flick', 'chocolate', 'adventure', 'sunshine'] ➞ [False, False, False, False]
 
 # ['bicycle', 'jarmony', 'flick', 'sheep', 'flick'] ➞ [True, True, False, False, True]
-
+# Testing
 def flick_switch(lst):
     list=[]
     is_flick=True
