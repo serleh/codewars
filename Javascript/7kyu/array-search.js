@@ -7,6 +7,9 @@
 // E
 
 function wordSearch(query, seq) {
+  // Filter the words that contains the queryString
+  // Store them in a variable
+  // Check if they are empty then return ['Empty']
   const result = seq.filter((word) =>
     word.toLowerCase().includes(query.toLowerCase())
   );
