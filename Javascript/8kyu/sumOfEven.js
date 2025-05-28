@@ -7,21 +7,19 @@
 // E
 
 function evenChars(string) {
-  if (typeof string !== "string" || string.length < 2 || string.length > 100) {
-    return "invalid string";
-  }
-  let result = "";
-  for (let i = 1; i < string.length; i += 2) {
-    result += string[i];
-  }
-  result = result.split("");
-  return result;
+  // if (typeof string !== "string" || string.length < 2 || string.length > 100) {
+  //   return "invalid string";
+  // }
+  // let result = "";
+  // for (let i = 1; i < string.length; i += 2) {
+  //   result += string[i];
+  // }
+  // result = result.split("");
+  // return result;
+  return string.length < 2 || string.length > 100
+    ? "invalid string"
+    : [...string].filter((x, i) => i % 2);
 }
-
-// function evenChars(string) {
-//   return (string.length < 2 || string.length > 100) ? "invalid string" :
-//   [...string].filter((x, i) => i % 2);
-// }
 
 // E
 console.log(evenChars("abcdefghijklm")); // -> ["b", "d", "f", "h", "j", "l"]
